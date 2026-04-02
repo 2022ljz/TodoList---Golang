@@ -47,6 +47,7 @@ func GetTodoList(c *gin.Context) {
 	c.JSON(http.StatusOK,todoList)	
 }
 
+//基于主键查询更新，先查到数据，然后直接覆写，最后保存的时候由于主键有值，因此update（否则insert）
 func UpdateATodo(c *gin.Context) {
 	id,ok := c.Params.Get("id")
 	if !ok {

@@ -53,7 +53,6 @@ func main() {
 		v1Group.GET("/todo/:id", func(c *gin.Context) {})
 
 		//修改待办事项
-		//基于主键查询更新，先查到数据，然后直接覆写，最后保存的时候由于主键有值，因此update（否则insert）
 		v1Group.PUT("/todo/:id", controller.UpdateATodo)
 
 		//删除待办事项
