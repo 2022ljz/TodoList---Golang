@@ -1,0 +1,54 @@
+# ===== Go =====
+# 编译产物
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 测试文件
+*.test
+
+# go build 目录
+/bin/
+/build/
+/dist/
+
+# Go workspace
+go.work
+go.work.sum
+
+# ===== 日志 =====
+*.log
+
+# ===== 环境变量（重要）=====
+.env
+
+# ===== IDE =====
+# VS Code
+.vscode/
+
+# GoLand / IntelliJ
+.idea/
+*.iml
+
+# ===== 操作系统 =====
+# mac
+.DS_Store
+
+# windows
+Thumbs.db
+
+# ===== 临时文件 =====
+tmp/
+temp/
+
+# ===== 静态资源（一般不忽略）=====
+# static/ 不要忽略！！！
+# templates/ 不要忽略！！！
+
+# ===== 可选：数据库文件（如果你用sqlite才需要）=====
+*.db
+
+# ===== 可选：上传文件目录（如果有的话）=====
+uploads/
